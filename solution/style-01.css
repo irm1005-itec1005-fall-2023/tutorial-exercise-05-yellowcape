@@ -1,0 +1,86 @@
+/*
+ * CSS File for the solution
+ * Tutorial 05
+ * Step 01
+ */
+
+html {
+  font-size: 1.0rem;
+}
+
+/*
+  The body is our flex box and is setup
+  to take the full width and height of the page
+  from reset.css
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #edf2f4;
+  color: #242121;
+
+  /* Flex directives */
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+/* The first item in the flex container will be the header */
+
+/*
+  To keep things simple we just target the
+  header directly. Here we are adding
+  padding to the top and bottom and sides
+  and setting the background and text colours.
+*/
+header {
+  padding: 2rem 1rem;
+  background-color: #2b2d42;
+  color: #edf2f4;
+}
+
+header h2 {
+  text-align: center;
+  margin: 0;
+}
+
+
+/*
+  To keep things simple we just target the
+  main element directly.
+
+  We add the align-self: center directive to
+  center the flex item in the middle of the screen
+
+  We set the minimum and maximum width so
+  that we can keep our box to a certain size.
+
+  Lastly we add padding, colours, and a box shadow to
+  make it look a bit better
+*/
+main {
+  align-self: center;
+
+  min-width: 500px;
+  padding: 5rem;
+  margin: 2rem;
+  background-color: #457b9d;
+  color: #f1faee;
+  border-radius: 20px;
+  box-shadow: #315a72 0px 8px 40px;
+}
+
+/*
+  To keep things simple we just target the
+  footer directly. Here we are adding
+  padding to the top and bottom (nothing on the side)
+  and setting the background and text colours.
+*/
+footer {
+  padding: 2rem 1rem;
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+footer h2 {
+  text-align: center;
+}

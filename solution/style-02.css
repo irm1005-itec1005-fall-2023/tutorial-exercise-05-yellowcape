@@ -1,0 +1,188 @@
+/*
+ * CSS File for the solution
+ * Tutorial 05
+ * Step 02
+ */
+
+/****** Screen reader text *******/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+html {
+  font-size: 1.2rem;
+}
+
+/*
+  The body is our flex box container and is setup
+  to take the full width and height of the page
+  from reset.css
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #edf2f4;
+  color: #242121;
+
+  /* Source: https://uigradients.com/#Jonquil */
+  background: #ffeeee; /* fallback for old browsers */
+  background: linear-gradient(to right, #ddefbb, #ffeeee);
+
+  /* Flex directives */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  /* header is both a flexbox item and a flexbox container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 1rem;
+}
+
+header .header--banner--logo {
+  /* Set the height of the image */
+  height: 2.2rem;
+}
+
+header .header--banner--nav ul {
+  /* Another flexbox container */
+  display: flex;
+  /* This adds gaps between the items */
+  gap: 2rem;
+
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+header nav.header--banner--nav ul li a {
+  font-size: 1rem;
+  color: #0e3240;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+header nav.header--banner--nav ul li a:hover {
+  color: #2b2d42;
+  text-decoration: underline;
+}
+
+/*
+  To keep things simple we just target the
+  main element directly.
+
+  We add the align-self: center directive to
+  center the flex item in the middle of the screen
+
+  We set the minimum and maximum width so
+  that we can keep our box to a certain size.
+
+  Lastly we add padding, colours, and a box shadow to
+  make it look a bit better
+*/
+main {
+  /*
+    You must have align-self center otherwise the
+    flex item will not center in the middle of the screen
+    and will try to take up the full width of the page
+  */
+  align-self: center;
+
+  /* Set a minimum width for our "box" */
+  min-width: 550px;
+  margin: 1rem;
+  color: #1d3557;
+}
+
+main h1 {
+  margin: 10px 0px 40px 0px;
+  font-size: 1.7rem;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.main--img {
+  /* Margin 0 auto is a cool trick to center an element */
+  margin: 0 auto;
+  height: 150px;
+}
+
+.main--form {
+  display: flex;
+}
+
+.main--form input {
+  flex-grow: 1;
+
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.main--form input[type="submit"] {
+  border: none;
+  padding: 1.5rem 2rem;
+  background-color: #1d3557;
+  color: #f1faee;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.main--form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #30568b;
+}
+
+/*
+  To keep things simple we just target the
+  footer directly. Here we are adding
+  padding to the top and bottom (nothing on the side)
+  and setting the background and text colours.
+*/
+footer {
+  padding: 2rem 1.3rem;
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+footer .footer--nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 2rem;
+
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer .footer--nav ul li a {
+  /* Make the footer text a bit smaller */
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: 900;
+  color: #f1faee;
+}
+
+/*
+  This is a neat trick
+  We use the margin-left auto
+  positioning trick to push
+  the element to the right
+*/
+.footer--nav--push {
+  margin-left: auto;
+}

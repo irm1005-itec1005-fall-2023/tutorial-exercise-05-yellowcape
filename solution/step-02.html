@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <!-- Set the page title -->
+  <title>Tutorial Exercise 05</title>
+
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="utf-8" />
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Specifies the document mode for Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Set the CSS Reset File First -->
+  <link rel="stylesheet" href="./reset.css" />
+
+  <!-- Then bring in your own CSS -->
+  <link rel="stylesheet" href="./style-02.css" />
+
+<body>
+  <!--
+
+    DO NOT MODIFY ANY HTML IN THIS PAGE FOR THE EXERCISE
+
+  -->
+  <!-- Our Header Section -->
+  <header>
+    <!--
+        sr-only is a special CSS Class we create to hide text from visual users but still have the content read out by screenreaders for #a11y
+      -->
+    <h2 class="sr-only">Site header</h2>
+
+    <img class="header--banner--logo" src="images/logo.png" alt="logo" />
+
+    <nav class="header--banner--nav">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- Our Main Content Area -->
+  <main>
+    <img class="main--img" src="images/student.png" alt="Graphic of a student at a computer" />
+
+    <h1>Student Database Search</h1>
+
+    <form class="main--form">
+      <label class="sr-only" for="students">Search students</label>
+      <input type="search" id="students" name="students" placeholder="Kamala Khan" />
+      <input type="submit" value="Search" />
+    </form>
+  </main>
+
+  <!-- Our Footer Area -->
+  <footer>
+    <h2 class="sr-only">Site footer</h2>
+
+    <nav class="footer--nav">
+      <ul>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Support</a></li>
+        <li class="footer--nav--push"><a href="#">Privacy</a></li>
+        <li><a href="#">Terms and conditions</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
