@@ -17,17 +17,22 @@ body {
   color: #242121;
 
   /* 1. Set the font family and colours */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: greenyellow
 
 
   /* Check out this cool background gradient */
   /* Replace the background with your own gradient styles */
   /* Source: https://uigradients.com/#Jonquil */
-  background: #ffeeee; /* fallback for old browsers */
-  background: linear-gradient(to right, #ddefbb, #ffeeee);
+  background: #ffffff; /* fallback for old browsers */
+  background: linear-gradient(to right, #dd4fbb, #ffdfee);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   /* Set the flexbox directives */
   /* 2. Set the display to flex */
-
+  
   /* 3. Set the flex direction to column */
 
   /* 4. Set the justify content to space between */
