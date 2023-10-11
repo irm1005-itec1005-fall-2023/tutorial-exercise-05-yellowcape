@@ -85,8 +85,9 @@ header .header--banner--nav ul {
 
 header nav.header--banner--nav ul li a {
   font-size: 2rem;
-  text-decoration: wavy;
+  text-decoration: none;
   font-weight: 300;
+  color: #5c0833;
   /* 14. Set the font size, colour, text decoration, and font weight
          to make your links look nice
    */
@@ -94,7 +95,8 @@ header nav.header--banner--nav ul li a {
 
 header nav.header--banner--nav ul li a:hover {
   /* 15. Set the hover colour to something nice */
-
+color: pink;
+text-decoration: underline;
   /* 16. Set the hover text decoration to underline */
 
 }
