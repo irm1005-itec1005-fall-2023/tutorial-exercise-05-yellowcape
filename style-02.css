@@ -49,6 +49,9 @@ header {
 
   /* header is both a flexbox item and a flexbox container */
   /* 5. Set the display to flex */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   /* 6. Set the justify content to space between */
 
@@ -56,11 +59,17 @@ header {
 }
 
 header .header--banner--logo {
+  height: 2.2rem;
   /* 8. Set the height of the image (I used 2.2rem but you can use whatevs) */
 
 }
 
 header .header--banner--nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
   /* Another flexbox container */
   /* 9. Set the display to flex */
 
@@ -75,6 +84,9 @@ header .header--banner--nav ul {
 }
 
 header nav.header--banner--nav ul li a {
+  font-size: 2rem;
+  text-decoration: wavy;
+  font-weight: 300;
   /* 14. Set the font size, colour, text decoration, and font weight
          to make your links look nice
    */
